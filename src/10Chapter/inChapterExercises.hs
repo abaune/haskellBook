@@ -76,4 +76,4 @@ fibsUnder100 = takeWhile (< 100) fibs
 -- filter (\ x -> x < 100) fibs Never ends...
 
 -- 3.
-scanFactorial n = take n $ scanl (*) 1 [1..]
+scanFactorial n = scanl (*) 1 [1..(n-1)]
